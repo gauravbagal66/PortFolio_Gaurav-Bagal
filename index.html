@@ -506,49 +506,41 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
+ <div class="container-fluid py-5" id="contact">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center mb-5">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+        </div>
+
+        <form action="https://formsubmit.co/gauravbagal66@gmail.com" method="POST">
+            <!-- FormSubmit Hidden Options -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you! I have received your message.">
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" name="name" class="form-control p-4" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="email" name="email" class="form-control p-4" placeholder="Your Email" required />
                 </div>
             </div>
-        </div>
+            <div class="mb-3">
+                <input type="text" name="subject" class="form-control p-4" placeholder="Subject" required />
+            </div>
+            <div class="mb-4">
+                <textarea name="message" class="form-control py-3 px-4" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary px-5" type="submit">Send Message</button>
+            </div>
+        </form>
     </div>
+</div>
+
+
     <!-- Contact End -->
 
 
